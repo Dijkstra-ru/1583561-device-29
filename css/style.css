@@ -64,18 +64,17 @@ a {
   --basic-light: #7e7e7e;
   --basic-extra-light: #e5e5e5;
   --basic-white: #ffffff;
-
   --special-gold: #f0c52e;
   --special-pale: #f7e296;
   --special-vomit: #91c92f;
-
   --status-wrong: #f6dada;
-
   --pale-black: rgba(0, 0, 0, 0.6);
   --faint-black: rgba(0, 0, 0, 0.3);
   --pale-white: rgba(255, 255, 255, 0.7);
   --faint-white: rgba(255, 255, 255, 0.3);
-
+  --faintest-black: rgba(255, 255, 255, 0.1);
+  --nav-basic-gray: #ebebeb;
+  --nav-focus-gray: #d9d9d9;
 }
 
 /* Shared styles */
@@ -112,15 +111,25 @@ a {
   line-height: 20px;
 }
 
+.menu-list__link,
+.catalog-links__link,
 .main-header__link {
   color: var(--basic-black);
 }
 
+.menu-list__link:hover,
+.catalog-links__link:hover,
 .main-header__link:hover {
   color: var(--pale-black);
 }
 
+.menu-list__link:active,
+.catalog-links__link:active,
 .main-header__link:active {
+  color: var(--faint-black);
+}
+
+.menu-list__exit-link {
   color: var(--faint-black);
 }
 
@@ -142,15 +151,15 @@ a {
   font-family: var(--opensans);
 }
 
-.main-footer__menu-link {
+.menu-list__menu-link {
   color: var(--pale-white);
 }
 
-.main-footer__menu-link:hover {
+.menu-list__menu-link:hover {
   color: var(--basic-white);
 }
 
-.main-footer__menu-link:active {
+.menu-list__menu-link:active {
   color: var(--faint-white);
 }
 
@@ -172,7 +181,6 @@ a {
   color: var(--faint-white);
 }
 
-
 /* Main page */
 
 .main-content {
@@ -181,21 +189,21 @@ a {
 
 /* Featured section */
 
-.featured__promo {
+.featured-slider__promo {
   font-family: var(--gilroy);
   font-weight: 700;
   font-size: 47px;
   line-height: 58px;
 }
 
-.featured__feature {
+.featured-slider__feature {
   font-family: var(--opensans);
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
 }
 
-.featured__link {
+.featured-slider__link {
   color: var(--basic-black);
   font-family: var(--gilroy);
   font-weight: 700;
@@ -204,21 +212,21 @@ a {
   text-transform: uppercase;
 }
 
-.featured__link:hover {
+.featured-slider__link:hover {
   color: var(--pale-black);
 }
 
-.featured__link:active {
+.featured-slider__link:active {
   color: var(--faint-black);
 }
 
-.featured__parameter-value{
+.featured-slider__parameter-value {
   font-family: var(--gilroy);
   font-size: 36px;
   line-height: 42px;
 }
 
-.featured__parameter{
+.featured-slider__parameter {
   font-family: var(--gilroy);
   font-size: 13px;
   line-height: 15px;
@@ -259,12 +267,7 @@ a {
   list-style: none;
 }
 
-.services-slider {
-  list-style: none;
-}
-
-
-.services__control-button{
+.services__control-button {
   color: inherit;
   background-color: inherit;
   font-family: var(--gilroy);
@@ -272,10 +275,9 @@ a {
   border-style: none;
   font-size: 18px;
   line-height: 22px;
-  width:100%;
+  width: 100%;
   text-align: left;
   cursor: pointer;
-
 }
 
 .services__control-item {
@@ -288,13 +290,16 @@ a {
   background-color: var(--basic-black);
 }
 
-.servies-slider__header {
+.services-slider {
+  list-style: none;
+}
+
+.services-slider__header {
   font-family: var(--gilroy);
   font-weight: 700;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
-
 }
 
 .services-slider__text {
@@ -325,13 +330,6 @@ a {
   line-height: 28px;
 }
 
-.partner-list__item {
-  font-family: var(--gilroy);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 28px;
-}
-
 .about__link {
   color: inherit;
   font-family: var(--gilroy);
@@ -342,6 +340,12 @@ a {
   text-transform: uppercase;
 }
 
+.partner-list__item {
+  font-family: var(--gilroy);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
 
 /* Contacts section */
 
@@ -368,3 +372,159 @@ a {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
+/* Catalog */
+
+.breadcrumbs__link {
+  font-family: var(--opensans);
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--faint-black);
+}
+
+.breadcrumbs__link:hover {
+  color: var(--pale-black);
+}
+
+.breadcrumbs__link:active {
+  color: var(--faintest-black);
+}
+
+.breadcrumbs__item {
+  list-style: none;
+}
+
+.catalog__filter-caption,
+.catalog__sort-caption {
+  font-family: var(--gilroy);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+}
+
+.sort-type-selector__link {
+  color: var(--faint-black);
+  font-family: var(--opensans);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.sort-type-selector__link:hover {
+  color: var(--pale-black);
+}
+
+.sort-type-selector__link:active {
+  color: var(--basic-black);
+}
+
+.sort-type-selector__link_selected {
+  color: var(--basic-black);
+}
+
+.sort-type-selector__item {
+  list-style: none;
+}
+
+.sort-dir-selector__item {
+  list-style: none;
+}
+
+.product-list__caption {
+  font-family: var(--gilroy);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.product-list__price {
+  font-family: var(--gilroy);
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.product-list__to-cart {
+  font-family: var(--gilroy);
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-style: none;
+  background-color: transparent;
+}
+
+.product-list__to-cart:active {
+  color: var(--pale-black);
+}
+
+.product-list__to-compare {
+  font-family: var(--opensans);
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  border-style: none;
+  background-color: transparent;
+  color: var(--pale-black);
+}
+
+.product-list__to-compare:hover {
+  color: var(--basic-black);
+}
+
+.product-list__to-compare:active {
+  color: var(--faint-black);
+}
+
+.pagination {
+  background-color: var(--nav-basic-gray);
+}
+
+.pagination__nav {
+  background-color: var(--nav-basic-gray);
+}
+
+.pagination__nav:hover {
+  background-color: var(--nav-focus-gray);
+}
+
+.pagination__nav-link {
+  color: var(--basic-black);
+  font-family: var(--gilroy);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.pagination__nav-link:active {
+  color: var(--faint-black);
+}
+
+.pagination__link {
+  color: var(--faint-black);
+  font-family: var(--gilroy);
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.pagination__link_current {
+  color: var(--basic-black);
+}
+
+.pagination__link:hover {
+  color: var(--pale-black);
+}
+
+.pagination__link:active {
+  color: var(--basic-black);
+}
+
