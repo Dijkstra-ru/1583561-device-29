@@ -64,18 +64,15 @@ a {
   --basic-light: #7e7e7e;
   --basic-extra-light: #e5e5e5;
   --basic-white: #ffffff;
-
   --special-gold: #f0c52e;
   --special-pale: #f7e296;
   --special-vomit: #91c92f;
-
   --status-wrong: #f6dada;
-
   --pale-black: rgba(0, 0, 0, 0.6);
   --faint-black: rgba(0, 0, 0, 0.3);
   --pale-white: rgba(255, 255, 255, 0.7);
   --faint-white: rgba(255, 255, 255, 0.3);
-
+  --faintest-black: rgba(255, 255, 255, 0.1);
   --nav-basic-gray: #ebebeb;
   --nav-focus-gray: #d9d9d9;
 }
@@ -114,8 +111,6 @@ a {
   line-height: 20px;
 }
 
-
-
 .menu-list__link,
 .catalog-links__link,
 .main-header__link {
@@ -130,7 +125,7 @@ a {
 
 .menu-list__link:active,
 .catalog-links__link:active,
-.main-header__link:active{
+.main-header__link:active {
   color: var(--faint-black);
 }
 
@@ -186,7 +181,6 @@ a {
   color: var(--faint-white);
 }
 
-
 /* Main page */
 
 .main-content {
@@ -226,13 +220,13 @@ a {
   color: var(--faint-black);
 }
 
-.featured-slider__parameter-value{
+.featured-slider__parameter-value {
   font-family: var(--gilroy);
   font-size: 36px;
   line-height: 42px;
 }
 
-.featured-slider__parameter{
+.featured-slider__parameter {
   font-family: var(--gilroy);
   font-size: 13px;
   line-height: 15px;
@@ -273,12 +267,7 @@ a {
   list-style: none;
 }
 
-.services-slider {
-  list-style: none;
-}
-
-
-.services__control-button{
+.services__control-button {
   color: inherit;
   background-color: inherit;
   font-family: var(--gilroy);
@@ -286,10 +275,9 @@ a {
   border-style: none;
   font-size: 18px;
   line-height: 22px;
-  width:100%;
+  width: 100%;
   text-align: left;
   cursor: pointer;
-
 }
 
 .services__control-item {
@@ -302,13 +290,16 @@ a {
   background-color: var(--basic-black);
 }
 
-.servies-slider__header {
+.services-slider {
+  list-style: none;
+}
+
+.services-slider__header {
   font-family: var(--gilroy);
   font-weight: 700;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
-
 }
 
 .services-slider__text {
@@ -339,13 +330,6 @@ a {
   line-height: 28px;
 }
 
-.partner-list__item {
-  font-family: var(--gilroy);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 28px;
-}
-
 .about__link {
   color: inherit;
   font-family: var(--gilroy);
@@ -356,6 +340,12 @@ a {
   text-transform: uppercase;
 }
 
+.partner-list__item {
+  font-family: var(--gilroy);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
 
 /* Contacts section */
 
@@ -392,11 +382,20 @@ a {
   color: var(--faint-black);
 }
 
+.breadcrumbs__link:hover {
+  color: var(--pale-black);
+}
+
+.breadcrumbs__link:active {
+  color: var(--faintest-black);
+}
+
 .breadcrumbs__item {
   list-style: none;
 }
 
-.catalog__filter-caption, .catalog__sort-caption {
+.catalog__filter-caption,
+.catalog__sort-caption {
   font-family: var(--gilroy);
   font-size: 16px;
   line-height: 20px;
