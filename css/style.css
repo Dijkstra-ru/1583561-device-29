@@ -86,6 +86,18 @@ a {
   list-style: none;
 }
 
+.main-footer__academy-logo:hover,
+.main-header__logo:hover,
+.main-footer__logo:hover {
+  opacity: 0.6;
+}
+
+.main-footer__academy-logo:active,
+.main-header__logo:active,
+.main-footer__logo:active {
+  opacity: 0.3;
+}
+
 /* Header */
 
 .main-header {
@@ -181,6 +193,26 @@ a {
   color: var(--faint-white);
 }
 
+.social {
+  list-style: none;
+}
+
+.main-footer__nav {
+  list-style: none;
+}
+
+.social__svg {
+  opacity: 0.3;
+}
+
+.social__svg:hover {
+  opacity: 0.6;
+}
+
+.social__svg:active {
+  opacity: 0.1;
+}
+
 /* Main page */
 
 .main-content {
@@ -188,6 +220,10 @@ a {
 }
 
 /* Featured section */
+
+.featured-slider {
+  list-style: none;
+}
 
 .featured-slider__promo {
   font-family: var(--gilroy);
@@ -312,6 +348,14 @@ a {
 
 .brand-list__item {
   list-style: none;
+}
+
+.brand-list__img {
+  filter: grayscale(100%);
+}
+
+.brand-list__img:hover {
+  filter: none;
 }
 
 /* About section */
@@ -527,4 +571,13 @@ a {
 .pagination__link:active {
   color: var(--basic-black);
 }
+
+.pagination__list {
+  list-style: none;
+}
+
+.product-list {
+  list-style: none;
+}
+
 
