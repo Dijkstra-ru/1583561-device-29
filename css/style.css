@@ -351,47 +351,11 @@ a {
 }
 
 .brand-list__img {
-  display: none;
+  filter: grayscale(100%);
 }
 
-.brand-list__dji {
-  height: 100px;
-  width: 260px;
-  background-image: url("../img/logo-1-gray.png");
-}
-
-.brand-list__dji:hover{
-  background-image: url("../img/logo-1.png");
-}
-
-.brand-list__sp {
-  height: 100px;
-  width: 260px;
-  background-image: url("../img/logo-2-gray.png");
-}
-
-.brand-list__sp:hover{
-  background-image: url("../img/logo-2.png");
-}
-
-.brand-list__gopro {
-  height: 100px;
-  width: 260px;
-  background-image: url("../img/logo-3-gray.png");
-}
-
-.brand-list__gopro:hover {
-  background-image: url("../img/logo-3.png");
-}
-
-.brand-list__vive {
-  height: 100px;
-  width: 260px;
-  background-image: url("../img/logo-4-gray.png");
-}
-
-.brand-list__vive:hover {
-  background-image: url("../img/logo-4.png");
+.brand-list__img:hover {
+  filter: none;
 }
 
 /* About section */
