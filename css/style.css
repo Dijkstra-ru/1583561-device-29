@@ -86,6 +86,16 @@ a {
   list-style: none;
 }
 
+.main-header__logo:hover,
+.main-footer__logo:hover {
+  opacity: 0.6;
+}
+
+.main-header__logo:active,
+.main-footer__logo:active {
+  opacity: 0.3;
+}
+
 /* Header */
 
 .main-header {
@@ -181,6 +191,26 @@ a {
   color: var(--faint-white);
 }
 
+.social {
+  list-style: none;
+}
+
+.main-footer__nav {
+  list-style: none;
+}
+
+.social__svg {
+  opacity: 0.3;
+}
+
+.social__svg:hover {
+  opacity: 0.7;
+}
+
+.social__svg:active {
+  opacity: 0.1;
+}
+
 /* Main page */
 
 .main-content {
@@ -188,6 +218,10 @@ a {
 }
 
 /* Featured section */
+
+.featured-slider {
+  list-style: none;
+}
 
 .featured-slider__promo {
   font-family: var(--gilroy);
@@ -312,6 +346,50 @@ a {
 
 .brand-list__item {
   list-style: none;
+}
+
+.brand-list__img {
+  display: none;
+}
+
+.brand-list__dji {
+  height: 100px;
+  width: 260px;
+  background-image: url("../img/logo-1-gray.png");
+}
+
+.brand-list__dji:hover{
+  background-image: url("../img/logo-1.png");
+}
+
+.brand-list__sp {
+  height: 100px;
+  width: 260px;
+  background-image: url("../img/logo-2-gray.png");
+}
+
+.brand-list__sp:hover{
+  background-image: url("../img/logo-2.png");
+}
+
+.brand-list__gopro {
+  height: 100px;
+  width: 260px;
+  background-image: url("../img/logo-3-gray.png");
+}
+
+.brand-list__gopro:hover {
+  background-image: url("../img/logo-3.png");
+}
+
+.brand-list__vive {
+  height: 100px;
+  width: 260px;
+  background-image: url("../img/logo-4-gray.png");
+}
+
+.brand-list__vive:hover {
+  background-image: url("../img/logo-4.png");
 }
 
 /* About section */
@@ -527,4 +605,13 @@ a {
 .pagination__link:active {
   color: var(--basic-black);
 }
+
+.pagination__list {
+  list-style: none;
+}
+
+.product-list {
+  list-style: none;
+}
+
 
