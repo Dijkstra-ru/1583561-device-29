@@ -86,11 +86,13 @@ a {
   list-style: none;
 }
 
+.main-footer__academy-logo:hover,
 .main-header__logo:hover,
 .main-footer__logo:hover {
   opacity: 0.6;
 }
 
+.main-footer__academy-logo:active,
 .main-header__logo:active,
 .main-footer__logo:active {
   opacity: 0.3;
