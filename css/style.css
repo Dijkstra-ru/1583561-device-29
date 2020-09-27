@@ -102,6 +102,13 @@ a {
 
 .main-header {
   background-color: var(--special-pale);
+  margin-top: 40px;
+  min-height: 300px;
+}
+
+.main-header__logo {
+  margin-top: -19px;
+  margin-left: 60px;
 }
 
 .main-header__links {
@@ -580,4 +587,121 @@ a {
   list-style: none;
 }
 
+/* Сетка */
 
+.main-page {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.center-block {
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.main-header__first-row {
+  display: grid;
+  grid-template-columns: 440px 100px 1fr;
+
+}
+
+.main-header__menu-list {
+  grid-column: 3/-1;
+  display: grid;
+  grid-template-columns: 280px 135px auto;
+}
+
+.main-header__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content__featured {
+  margin-top: -48px;
+}
+
+.featured-slider__item {
+  display: flex;
+  width: 1024px;
+  min-height: 506px;
+}
+
+.product-categories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-block {
+  display: flex;
+}
+
+.brand-list {
+  display: flex;
+}
+
+.index-columns {
+  display: flex;
+}
+
+.main-footer .center-block {
+  display: grid;
+  grid-template-columns: 368px 423px 370px;
+  grid-template-rows: 46px 36px 31px 69px 35px 51px;
+}
+
+.main-footer__logo-link {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.main-footer__adress {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.main-footer__nav {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.main-footer__links {
+  display:flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.social {
+  display:flex;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  justify-self: center;
+}
+
+.social__item {
+  padding: 20px;
+}
+
+.main-footer__tel {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  justify-self: right;
+}
+
+.main-footer__academy-logo-wrapper {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  justify-self: right;
+}
+
+.main-footer__menu-list {
+  display: flex;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: right;
+}
+
+.menu-list__item {
+  padding: 20px;
+}
